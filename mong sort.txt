@@ -1,0 +1,186 @@
+db.products.insertMany([{name:"Hero",model:"Xpulse",rent1:1,mileage:30,rent2:10000,fuel:"Petrol"},
+{name:"RoyalEnfield",model:"Hunder350",rent1:1,mileage:70,rent2:20000,fuel:"Petrol"},
+{name:"Bajaj",model:"Pulsar150",rent1:1,mileage:50,rent2:30000,fuel:"Petrol"},
+{name:"Bajaj",model:"Pulsar50",rent1:1,mileage:40,rent2:20000,fuel:"Petrol"},
+{name:"Yamaha",model:"Fz",rent1:1,mileage:80,rent2:10000,fuel:"Petrol"},
+{name:"Bajaj",model:"Avenger",rent1:1,mileage:60,rent2:9000,fuel:"Petrol"},
+{name:"Honda",model:"Unicorn",rent1:1,mileage:30,rent2:7000,fuel:"Petrol"},
+{name:"Hero",model:"Xpulse",rent1:1,mileage:30,rent2:10000,fuel:"Petrol"},
+{name:"RoyalEnfield",model:"Hunder350",rent1:1,mileage:70,rent2:20000,fuel:"Petrol"},
+{name:"Bajaj",model:"Pulsar150",rent1:1,mileage:50,rent2:30000,fuel:"Petrol"},
+{name:"Bajaj",model:"Pulsar50",rent1:1,mileage:40,rent2:20000,fuel:"Petrol"},
+{name:"Yamaha",model:"Fz",rent1:1,mileage:80,rent2:10000,fuel:"Petrol"},
+{name:"Bajaj",model:"Avenger",rent1:1,mileage:60,rent2:9000,fuel:"Petrol"},
+{name:"Honda",model:"Unicorn",rent1:1,mileage:30,rent2:7000,fuel:"Petrol"},
+{name:"Hero",model:"Xpulse",rent1:1,mileage:30,rent2:10000,fuel:"Petrol"},
+{name:"RoyalEnfield",model:"Hunder350",rent1:1,mileage:70,rent2:20000,fuel:"Petrol"},
+{name:"Bajaj",model:"Pulsar150",rent1:1,mileage:50,rent2:30000,fuel:"Petrol"},
+{name:"Bajaj",model:"Pulsar50",rent1:1,mileage:40,rent2:20000,fuel:"Petrol"},
+{name:"Yamaha",model:"Fz",rent1:1,mileage:80,rent2:10000,fuel:"Petrol"}
+]);
+db.prducts.find({rent1:{$gt:1}});
+{
+  _id: ObjectId("6491c61d89592639e9748694"),
+  name: 'Yamaha',
+  model: 'FZ',
+  rent1: 2,
+  mileage: 50,
+  rent2: 15000,
+  fuel: 'Petrol'
+}
+{
+  _id: ObjectId("6491c61d89592639e9748696"),
+  name: 'Bajaj',
+  model: 'Pulsar',
+  rent1: 3,
+  mileage: 40,
+  rent2: 5000,
+  fuel: 'Petrol'
+}
+{
+  _id: ObjectId("6491c61d89592639e9748697"),
+  name: 'Tvs',
+  model: 'Ronin',
+  rent1: 2,
+  mileage: 45,
+  rent2: 10000,
+  fuel: 'Petrol'
+}
+db.prducts.find().sort({name:-1})
+{
+  _id: ObjectId("6491c61d89592639e9748694"),
+  name: 'Yamaha',
+  model: 'FZ',
+  rent1: 2,
+  mileage: 50,
+  rent2: 15000,
+  fuel: 'Petrol'
+}
+{
+  _id: ObjectId("6491c61d89592639e9748697"),
+  name: 'Tvs',
+  model: 'Ronin',
+  rent1: 2,
+  mileage: 45,
+  rent2: 10000,
+  fuel: 'Petrol'
+}
+{
+  _id: ObjectId("6491c61d89592639e9748695"),
+  name: 'RoyalEnfield',
+  model: 'Hunder350',
+  rent1: 1,
+  mileage: 60,
+  rent2: 20000,
+  fuel: 'Petrol'
+}
+{
+  _id: ObjectId("6491c61d89592639e9748693"),
+  name: 'Hero',
+  model: 'Xpulse',
+  rent1: 1,
+  mileage: 30,
+  rent2: 10000,
+  fuel: 'Petrol'
+}
+{
+  _id: ObjectId("6491c61d89592639e9748696"),
+  name: 'Bajaj',
+  model: 'Pulsar',
+  rent1: 3,
+  mileage: 40,
+  rent2: 5000,
+  fuel: 'Petrol'
+}
+db.prducts.find().sort({name:1})
+{
+  _id: ObjectId("6491c61d89592639e9748696"),
+  name: 'Bajaj',
+  model: 'Pulsar',
+  rent1: 3,
+  mileage: 40,
+  rent2: 5000,
+  fuel: 'Petrol'
+}
+{
+  _id: ObjectId("6491c61d89592639e9748693"),
+  name: 'Hero',
+  model: 'Xpulse',
+  rent1: 1,
+  mileage: 30,
+  rent2: 10000,
+  fuel: 'Petrol'
+}
+{
+  _id: ObjectId("6491c61d89592639e9748695"),
+  name: 'RoyalEnfield',
+  model: 'Hunder350',
+  rent1: 1,
+  mileage: 60,
+  rent2: 20000,
+  fuel: 'Petrol'
+}
+{
+  _id: ObjectId("6491c61d89592639e9748697"),
+  name: 'Tvs',
+  model: 'Ronin',
+  rent1: 2,
+  mileage: 45,
+  rent2: 10000,
+  fuel: 'Petrol'
+}
+{
+  _id: ObjectId("6491c61d89592639e9748694"),
+  name: 'Yamaha',
+  model: 'FZ',
+  rent1: 2,
+  mileage: 50,
+  rent2: 15000,
+  fuel: 'Petrol'
+}
+db.prducts.find().sort({name:1,model:-1})
+{
+  _id: ObjectId("6491c61d89592639e9748696"),
+  name: 'Bajaj',
+  model: 'Pulsar',
+  rent1: 3,
+  mileage: 40,
+  rent2: 5000,
+  fuel: 'Petrol'
+}
+{
+  _id: ObjectId("6491c61d89592639e9748693"),
+  name: 'Hero',
+  model: 'Xpulse',
+  rent1: 1,
+  mileage: 30,
+  rent2: 10000,
+  fuel: 'Petrol'
+}
+{
+  _id: ObjectId("6491c61d89592639e9748695"),
+  name: 'RoyalEnfield',
+  model: 'Hunder350',
+  rent1: 1,
+  mileage: 60,
+  rent2: 20000,
+  fuel: 'Petrol'
+}
+{
+  _id: ObjectId("6491c61d89592639e9748697"),
+  name: 'Tvs',
+  model: 'Ronin',
+  rent1: 2,
+  mileage: 45,
+  rent2: 10000,
+  fuel: 'Petrol'
+}
+{
+  _id: ObjectId("6491c61d89592639e9748694"),
+  name: 'Yamaha',
+  model: 'FZ',
+  rent1: 2,
+  mileage: 50,
+  rent2: 15000,
+  fuel: 'Petrol'
+}
